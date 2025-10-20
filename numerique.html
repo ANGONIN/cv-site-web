@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compétences numériques - Carine Angonin</title>
+  <meta name="description" content="Compétences numériques de Carine Angonin : HTML, CSS, JavaScript, UX/UI, accessibilité, GitHub, SEO et outils numériques.">
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+  <!-- Lien d’accès rapide + titre accessible -->
+  <a href="#contenu" class="sr-only">Aller au contenu principal</a>
+  <h1 class="sr-only">Compétences numériques — Carine Angonin</h1>
+
+  <!-- ===== HEADER / NAVBAR ===== -->
+  <header>
+    <div class="navbar">
+      <div class="brand">
+        <img src="assets/logo-ca-web.png" alt="Logo Carine Angonin" class="logo-img" />
+        <span class="site-name">Carine <strong>ANGONIN</strong></span>
+      </div>
+
+      <button class="nav-toggle" aria-controls="nav-links" aria-expanded="false" aria-label="Ouvrir le menu">☰</button>
+
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle active" aria-haspopup="true" aria-expanded="false">Compétences ▼</a>
+            <ul class="submenu">
+              <li><a href="competences.html">Compétences clés</a></li>
+              <li><a href="insertion.html">Insertion professionnelle</a></li>
+              <li><a href="numerique.html" class="active" aria-current="page">Compétences numériques</a></li>
+            </ul>
+          </li>
+
+          <li><a href="formations.html">Formations</a></li>
+          <li><a href="experiences.html">Expériences</a></li>
+          <li><a href="partenariats.html">Partenariats</a></li>
+          <li><a href="interets.html">Centres d’intérêt</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== CONTENU ===== -->
+  <main id="contenu" class="skills-section">
+    <h1>Compétences numériques</h1>
+
+    <div class="skills-grid">
+      <div class="skill-card">
+        <span class="icon">🧩</span>
+        <h3>HTML / CSS</h3>
+        <p>Structure sémantique, composants, responsive.</p>
+        <div class="progress"><div class="progress-bar" style="width: 85%"></div></div>
+      </div>
+
+      <div class="skill-card">
+        <span class="icon">⚡</span>
+        <h3>JavaScript</h3>
+        <p>DOM, menus accessibles, interactions utiles.</p>
+        <div class="progress"><div class="progress-bar" style="width: 60%"></div></div>
+      </div>
+
+      <div class="skill-card">
+        <span class="icon">🔗</span>
+        <h3>Git / GitHub</h3>
+        <p>Commits, branches, versionnage propre.</p>
+        <div class="progress"><div class="progress-bar" style="width: 70%"></div></div>
+      </div>
+
+      <div class="skill-card">
+        <span class="icon">🎛️</span>
+        <h3>UX / UI</h3>
+        <p>Lisibilité, hiérarchie visuelle, design fonctionnel.</p>
+        <div class="progress"><div class="progress-bar" style="width: 65%"></div></div>
+      </div>
+
+      <div class="skill-card">
+        <span class="icon">♿</span>
+        <h3>Accessibilité</h3>
+        <p>Navigation clavier, contrastes, ARIA basique.</p>
+        <div class="progress"><div class="progress-bar" style="width: 55%"></div></div>
+      </div>
+
+      <div class="skill-card">
+        <span class="icon">🔎</span>
+        <h3>SEO (bases)</h3>
+        <p>Balises titles, metas, structure HTML.</p>
+        <div class="progress"><div class="progress-bar" style="width: 50%"></div></div>
+      </div>
+
+      <div class="skill-card">
+        <span class="icon">🖌️</span>
+        <h3>Outils</h3>
+        <p>Canva, Figma (wireframes), Pack Office.</p>
+        <div class="progress"><div class="progress-bar" style="width: 75%"></div></div>
+      </div>
+
+      <div class="skill-card">
+        <span class="icon">🧭</span>
+        <h3>Méthodologie</h3>
+        <p>Organisation, documentation, check-lists.</p>
+        <div class="progress"><div class="progress-bar" style="width: 80%"></div></div>
+      </div>
+    </div>
+
+    <div class="back-btn">
+      <a href="index.html">⬅ Retour au menu</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Carine Angonin — Tous droits réservés</p>
+  </footer>
+
+  <script src="assets/script.js" defer></script>
+</body>
+</html>
+

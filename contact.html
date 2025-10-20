@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mon CV – Contact</title>
+  <meta name="description" content="Formulaire de contact du site de Carine Angonin (statique, envoi via FormSubmit)." />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+  <!-- Lien d’accès rapide + H1 invisible -->
+  <a href="#contenu" class="sr-only">Aller au contenu</a>
+  <h1 class="sr-only">Contact — Carine Angonin</h1>
+
+  <!-- ===== HEADER / NAVBAR ===== -->
+  <header>
+    <div class="navbar">
+      <a href="index.html" class="logo">
+        <img src="assets/logo-ca-web.png" alt="Logo de Carine Angonin" class="logo-img">
+      </a>
+      <span class="site-name">Carine <strong>ANGONIN</strong></span>
+      <button class="nav-toggle" aria-controls="nav-links" aria-expanded="false" aria-label="Ouvrir le menu">☰</button>
+
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Compétences ▼</a>
+            <ul class="submenu">
+              <li><a href="competences.html">Compétences clés</a></li>
+              <li><a href="insertion.html">Insertion professionnelle</a></li>
+              <li><a href="numerique.html">Compétences numériques</a></li>
+            </ul>
+          </li>
+          <li><a href="formations.html">Formations</a></li>
+          <li><a href="experiences.html">Expériences</a></li>
+          <li><a href="partenariats.html">Partenariats</a></li>
+          <li><a href="interets.html">Centres d’intérêt</a></li>
+          <!-- Actif ici -->
+          <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== CONTENU ===== -->
+  <main id="contenu" class="container">
+    <h1>Contact</h1>
+    <p class="intro" id="contact-note">
+      Remplissez ce formulaire pour m’écrire. L’envoi est traité par FormSubmit (compatible sites statiques).
+    </p>
+
+    <!-- Formulaire relié à FormSubmit -->
+    <form action="https://formsubmit.co/script.carinegermain@yahoo.fr" method="POST" class="contact-form" accept-charset="UTF-8" aria-describedby="contact-note">
+      <!-- Champs visibles -->
+      <label for="name">Nom :</label>
+      <input type="text" id="name" name="name" required placeholder="Votre nom" autocomplete="name">
+
+      <label for="email">Votre email :</label>
+      <input type="email" id="email" name="email" required placeholder="Votre adresse email" autocomplete="email">
+
+      <label for="message">Message :</label>
+      <textarea id="message" name="message" rows="6" required placeholder="Votre message"></textarea>
+
+      <button type="submit">Envoyer</button>
+
+      <!-- Options cachées FormSubmit -->
+      <input type="hidden" name="_subject" value="Nouveau message — Site de Carine Angonin">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <!-- Champ honeypot anti-spam -->
+      <input type="text" name="_honey" style="display:none">
+
+      <!-- Décommente si tu veux rediriger vers une page de remerciement après envoi
+      <input type="hidden" name="_next" value="https://tonutilisateur.github.io/ton-repo/merci.html">
+      -->
+
+      <!-- Accusé de réception automatique -->
+      <input type="hidden" name="_autoresponse" value="Bonjour,
+      Merci pour votre message, je vous réponds dès que possible.
+      — Carine Angonin">
+    
+    </form>
+
+    <!-- Coordonnées directes -->
+    <section class="contact-info" aria-labelledby="contact-direct">
+      <h2 id="contact-direct">Coordonnées directes</h2>
+      <p>📧 <a href="mailto:script.carinegermain@yahoo.fr">script.carinegermain@yahoo.fr</a></p>
+    </section>
+
+    <div class="back-btn">
+      <a href="index.html">⬅ Retour au menu</a>
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2025 Carine Angonin — Tous droits réservés.</p>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>

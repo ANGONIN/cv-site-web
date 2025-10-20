@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centres d’intérêt – CV Carine Angonin</title>
+  <meta name="description" content="Centres d’intérêt de Carine Angonin : pédagogie, web, neurosciences et intelligence artificielle — curiosité, expérimentation et transmission.">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <!-- Lien d’accès rapide + H1 invisible -->
+  <a href="#contenu" class="sr-only">Aller au contenu</a>
+  <h1 class="sr-only">Centres d’intérêt — Carine Angonin</h1>
+
+  <!-- ===== HEADER / NAVBAR ===== -->
+  <header>
+    <div class="navbar">
+      <!-- Logo + Nom -->
+      <div class="brand">
+        <img src="assets/logo-ca-web.png" alt="Logo Carine" class="logo-img" />
+        <span class="site-name">Carine <strong>ANGONIN</strong></span>
+      </div>
+
+      <!-- Burger -->
+      <button class="nav-toggle" aria-controls="nav-links" aria-expanded="false" aria-label="Ouvrir le menu">☰</button>
+
+      <!-- Menu -->
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Compétences ▼</a>
+            <ul class="submenu">
+              <li><a href="competences.html">Compétences clés</a></li>
+              <li><a href="insertion.html">Insertion professionnelle</a></li>
+              <li><a href="numerique.html">Compétences numériques</a></li>
+            </ul>
+          </li>
+
+          <li><a href="formations.html">Formations</a></li>
+          <li><a href="experiences.html">Expériences</a></li>
+          <li><a href="partenariats.html">Partenariats</a></li>
+
+          <!-- Actif ici -->
+          <li><a href="interets.html" class="active" aria-current="page">Centres d’intérêt</a></li>
+
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== CONTENU ===== -->
+  <main id="contenu" class="container">
+    <h1>Centres d’intérêt</h1>
+    <p class="intro">
+      Quelques domaines qui me nourrissent au quotidien — entre curiosité, expérimentation
+      et envie de transmettre.
+    </p>
+
+    <section class="interests-grid">
+      <article class="interest-card">
+        <div class="icon">🧑‍🏫</div>
+        <h3>Pédagogie</h3>
+        <p>
+          Transmettre, c’est apprendre deux fois. J’aime chercher comment rendre un contenu
+          accessible, clair et engageant — un équilibre entre rigueur et créativité.
+        </p>
+      </article>
+
+      <article class="interest-card">
+        <div class="icon">💻</div>
+        <h3>Web</h3>
+        <p>
+          Le web comme terrain d’expérimentation : tester des outils, comprendre les mécaniques
+          et transformer des idées en interfaces simples et utiles.
+        </p>
+      </article>
+
+      <article class="interest-card">
+        <div class="icon">🧠</div>
+        <h3>Neurosciences</h3>
+        <p>
+          Mieux comprendre mémoire, attention et motivation pour adapter les approches
+          d’apprentissage aux besoins réels des personnes.
+        </p>
+      </article>
+
+      <article class="interest-card">
+        <div class="icon">🤖</div>
+        <h3>Intelligence artificielle</h3>
+        <p>
+          Un champ stimulant, entre possibilités techniques et questions éthiques. Je suis
+          son évolution pour en saisir les usages concrets et responsables.
+        </p>
+      </article>
+    </section>
+
+    <!-- Retour menu -->
+    <div class="back-btn">
+      <a href="index.html">⬅ Retour au menu</a>
+    </div>
+  </main>
+
+  <footer>© 2025 Carine Angonin — Tous droits réservés</footer>
+  <script src="assets/script.js"></script>
+
+</body>
+</html>
